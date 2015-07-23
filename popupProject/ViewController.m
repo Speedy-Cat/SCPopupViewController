@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "SCPopupViewController.h"
 
 @interface ViewController ()
 
@@ -22,6 +23,10 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+- (IBAction)openPopupAction:(id)sender {
+    SCPopupViewController *popup = [[SCPopupViewController alloc] init];
+    [popup show];
 }
 
 @end
