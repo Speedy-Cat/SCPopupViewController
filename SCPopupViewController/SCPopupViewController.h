@@ -10,6 +10,7 @@
 
 @interface SCPopupViewController : UIViewController
 
+- (id)initWithContentView:(UIView*)content onTargetViewController:(UIViewController*)targetViewController;
 -(void)show;
 -(void)hide;
 

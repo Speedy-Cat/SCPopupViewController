@@ -12,15 +12,18 @@
 
 @interface SCPopupViewController ()
 
+@property UIViewController *targetViewController;
+
 @end
 
 @implementation SCPopupViewController
 
-- (id)initWithContentView:(UIView*)content
+- (id)initWithContentView:(UIView*)content onTargetViewController:(UIViewController*)targetViewController
 {
     self = [self init];
     if (self) {
         self.contentView = content;
+        self.targetViewController = targetViewController;
     }
     return self;
 }
@@ -44,7 +47,8 @@
     
     // Create and initialize a tap gesture
     UITapGestureRecognizer *tapRecognizer = [[UITapGestureRecognizer alloc]
-                                             initWithTarget:self action:@selector(showGestureForTapRecognizer:)];
+                                                initWithTarget:self
+                                                        action:@selector(showGestureForTapRecognizer:)];
     
     // Specify that the gesture must be a single tap
     tapRecognizer.numberOfTapsRequired = 1;
@@ -90,8 +94,8 @@
 
 -(void)show
 {
-    UIWindow* mainWindow = [[UIApplication sharedApplication] keyWindow];
-    [mainWindow addSubview:self.view];
+    [self.targetViewController addChildViewController:self];
+    [self.targetViewController.view addSubview:self.view];
 }
 
 -(void)hide
