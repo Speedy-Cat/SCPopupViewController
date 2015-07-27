@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SCPopupContainerViewController.h"
 
-@interface ContentPopupViewController : UIViewController
+@interface ContentPopupViewController : SCPopupContainerViewController
 
 @end

@@ -22,11 +22,16 @@
 
 @synthesize containerView = _containerView;
 
-- (id)initWithContentView:(UIView*)content onTargetViewController:(UIViewController*)targetViewController
+- (id)initWithContentView:(SCPopupContainerViewController*)content onTargetViewController:(UIViewController*)targetViewController
 {
     self = [self init];
     if (self) {
-        self.containerView = content;
+        if (content) {
+            [self addChildViewController:content];
+            content.delegate = self;
+            self.containerView = content.view;
+        }
+
         self.targetViewController = targetViewController;
     }
     return self;
@@ -150,6 +155,13 @@
 -(void)hide
 {
     self.view.hidden = YES;
+}
+
+#pragma SCPopupControllerDelegate
+
+-(void)closeActioned:(id)sender
+{
+    [self hide];
 }
 
 

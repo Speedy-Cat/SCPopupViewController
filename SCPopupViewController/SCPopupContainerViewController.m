@@ -1,32 +1,34 @@
 //
-//  ContentPopupViewController.m
+//  SCPopupContainerViewController.m
 //  popupProject
 //
 //  Created by Adrian Ortuzar on 27/07/15.
 //  Copyright (c) 2015 Adrian Ortuzar. All rights reserved.
 //
 
-#import "ContentPopupViewController.h"
+#import "SCPopupContainerViewController.h"
 
-@interface ContentPopupViewController ()
-
-@property (weak, nonatomic) IBOutlet UIButton *closeButton;
+@interface SCPopupContainerViewController ()
 
 @end
 
-@implementation ContentPopupViewController
+@implementation SCPopupContainerViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
-    [self.closeButton addTarget:self
-                         action:@selector(closeAction:)
-       forControlEvents:UIControlEventTouchUpInside];
+    // Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)closeAction:(id)sender
+{
+    if ([self.delegate respondsToSelector:@selector(closeActioned:)]) {
+        [self.delegate closeActioned:sender];
+    }
 }
 
 /*

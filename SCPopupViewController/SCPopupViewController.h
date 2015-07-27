@@ -7,10 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SCPopupContainerViewController.h"
 
-@interface SCPopupViewController : UIViewController
+@interface SCPopupViewController : UIViewController <SCPopupContainerDelegate>
 
-- (id)initWithContentView:(UIView*)content onTargetViewController:(UIViewController*)targetViewController;
+- (id)initWithContentView:(SCPopupContainerViewController*)content onTargetViewController:(UIViewController*)targetViewController;
 -(void)show;
 -(void)hide;
 

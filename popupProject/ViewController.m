@@ -27,8 +27,7 @@
 }
 - (IBAction)openPopupAction:(id)sender {
     ContentPopupViewController *contentVC = [ContentPopupViewController new];
-    UIView *popupContent = contentVC.view;
-    SCPopupViewController *popup = [[SCPopupViewController alloc] initWithContentView:popupContent onTargetViewController:self];
+    SCPopupViewController *popup = [[SCPopupViewController alloc] initWithContentView:contentVC onTargetViewController:self];
     [popup show];
 }
 

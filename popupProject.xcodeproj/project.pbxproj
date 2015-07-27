@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		49E621101B666E9300E489CB /* ContentPopupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49E6210E1B666E9300E489CB /* ContentPopupViewController.m */; };
 		49E621111B666E9300E489CB /* ContentPopupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49E6210F1B666E9300E489CB /* ContentPopupViewController.xib */; };
+		49E621141B667B1300E489CB /* SCPopupContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49E621131B667B1300E489CB /* SCPopupContainerViewController.m */; };
 		D57DF8E31B6182C500DC085B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D57DF8E21B6182C500DC085B /* main.m */; };
 		D57DF8E61B6182C500DC085B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D57DF8E51B6182C500DC085B /* AppDelegate.m */; };
 		D57DF8E91B6182C500DC085B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D57DF8E81B6182C500DC085B /* ViewController.m */; };
@@ -33,6 +34,8 @@
 		49E6210D1B666E9300E489CB /* ContentPopupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContentPopupViewController.h; sourceTree = "<group>"; };
 		49E6210E1B666E9300E489CB /* ContentPopupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContentPopupViewController.m; sourceTree = "<group>"; };
 		49E6210F1B666E9300E489CB /* ContentPopupViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContentPopupViewController.xib; sourceTree = "<group>"; };
+		49E621121B667B1300E489CB /* SCPopupContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCPopupContainerViewController.h; path = SCPopupViewController/SCPopupContainerViewController.h; sourceTree = "<group>"; };
+		49E621131B667B1300E489CB /* SCPopupContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCPopupContainerViewController.m; path = SCPopupViewController/SCPopupContainerViewController.m; sourceTree = "<group>"; };
 		D57DF8DD1B6182C500DC085B /* popupProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = popupProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D57DF8E11B6182C500DC085B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D57DF8E21B6182C500DC085B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -136,6 +139,8 @@
 			children = (
 				D57DF90A1B61876600DC085B /* SCPopupViewController.h */,
 				D57DF90B1B61876600DC085B /* SCPopupViewController.m */,
+				49E621121B667B1300E489CB /* SCPopupContainerViewController.h */,
+				49E621131B667B1300E489CB /* SCPopupContainerViewController.m */,
 			);
 			name = SCPopupViewController;
 			sourceTree = "<group>";
@@ -241,6 +246,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49E621141B667B1300E489CB /* SCPopupContainerViewController.m in Sources */,
 				49E621101B666E9300E489CB /* ContentPopupViewController.m in Sources */,
 				D57DF8E91B6182C500DC085B /* ViewController.m in Sources */,
 				D57DF8E61B6182C500DC085B /* AppDelegate.m in Sources */,
@@ -373,8 +379,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/scaura/Documents/IOSPlatform/DSM-KephriCoat/Libraries/External",
+					Libraries/MapBox,
+				);
 				INFOPLIST_FILE = popupProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/scaura/Documents/IOSPlatform/DSM-KephriCoat/Libraries/External",
+					Libraries/CrittercismSDK,
+					"/Users/scaura/Documents/IOSPlatform/DSM-KephriCoat/Libraries/External",
+					Libraries/GoogleAnalytics,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -383,8 +401,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/scaura/Documents/IOSPlatform/DSM-KephriCoat/Libraries/External",
+					Libraries/MapBox,
+				);
 				INFOPLIST_FILE = popupProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/scaura/Documents/IOSPlatform/DSM-KephriCoat/Libraries/External",
+					Libraries/CrittercismSDK,
+					"/Users/scaura/Documents/IOSPlatform/DSM-KephriCoat/Libraries/External",
+					Libraries/GoogleAnalytics,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
