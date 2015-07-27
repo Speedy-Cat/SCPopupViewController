@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "SCPopupViewController.h"
+#import "ContentPopupViewController.h"
 
 @interface ViewController ()
 
@@ -25,7 +26,9 @@
     // Dispose of any resources that can be recreated.
 }
 - (IBAction)openPopupAction:(id)sender {
-    SCPopupViewController *popup = [[SCPopupViewController alloc] initWithContentView:nil onTargetViewController:self];
+    ContentPopupViewController *contentVC = [ContentPopupViewController new];
+    UIView *popupContent = contentVC.view;
+    SCPopupViewController *popup = [[SCPopupViewController alloc] initWithContentView:popupContent onTargetViewController:self];
     [popup show];
 }
 

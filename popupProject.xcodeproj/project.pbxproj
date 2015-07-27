@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		49E621101B666E9300E489CB /* ContentPopupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49E6210E1B666E9300E489CB /* ContentPopupViewController.m */; };
+		49E621111B666E9300E489CB /* ContentPopupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49E6210F1B666E9300E489CB /* ContentPopupViewController.xib */; };
 		D57DF8E31B6182C500DC085B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D57DF8E21B6182C500DC085B /* main.m */; };
 		D57DF8E61B6182C500DC085B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D57DF8E51B6182C500DC085B /* AppDelegate.m */; };
 		D57DF8E91B6182C500DC085B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D57DF8E81B6182C500DC085B /* ViewController.m */; };
@@ -28,6 +30,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		49E6210D1B666E9300E489CB /* ContentPopupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContentPopupViewController.h; sourceTree = "<group>"; };
+		49E6210E1B666E9300E489CB /* ContentPopupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContentPopupViewController.m; sourceTree = "<group>"; };
+		49E6210F1B666E9300E489CB /* ContentPopupViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContentPopupViewController.xib; sourceTree = "<group>"; };
 		D57DF8DD1B6182C500DC085B /* popupProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = popupProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D57DF8E11B6182C500DC085B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D57DF8E21B6182C500DC085B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -93,6 +98,9 @@
 				D57DF8ED1B6182C500DC085B /* Images.xcassets */,
 				D57DF8EF1B6182C500DC085B /* LaunchScreen.xib */,
 				D57DF8E01B6182C500DC085B /* Supporting Files */,
+				49E6210D1B666E9300E489CB /* ContentPopupViewController.h */,
+				49E6210E1B666E9300E489CB /* ContentPopupViewController.m */,
+				49E6210F1B666E9300E489CB /* ContentPopupViewController.xib */,
 			);
 			path = popupProject;
 			sourceTree = "<group>";
@@ -213,6 +221,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D57DF8EC1B6182C500DC085B /* Main.storyboard in Resources */,
+				49E621111B666E9300E489CB /* ContentPopupViewController.xib in Resources */,
 				D57DF8F11B6182C500DC085B /* LaunchScreen.xib in Resources */,
 				D57DF8EE1B6182C500DC085B /* Images.xcassets in Resources */,
 			);
@@ -232,6 +241,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49E621101B666E9300E489CB /* ContentPopupViewController.m in Sources */,
 				D57DF8E91B6182C500DC085B /* ViewController.m in Sources */,
 				D57DF8E61B6182C500DC085B /* AppDelegate.m in Sources */,
 				D57DF8E31B6182C500DC085B /* main.m in Sources */,
@@ -432,6 +442,7 @@
 				D57DF9021B6182C500DC085B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D57DF9031B6182C500DC085B /* Build configuration list for PBXNativeTarget "popupProjectTests" */ = {
 			isa = XCConfigurationList;
@@ -440,6 +451,7 @@
 				D57DF9051B6182C500DC085B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

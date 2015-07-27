@@ -15,6 +15,6 @@
 -(void)hide;
 
 @property (strong, nonatomic) UIView *backgroundView;
-@property (strong, nonatomic) UIView *contentView;
+@property (strong, nonatomic) UIView *containerView;
 
 @end
