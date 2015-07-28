@@ -10,6 +10,7 @@
 		49E621101B666E9300E489CB /* ContentPopupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49E6210E1B666E9300E489CB /* ContentPopupViewController.m */; };
 		49E621111B666E9300E489CB /* ContentPopupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49E6210F1B666E9300E489CB /* ContentPopupViewController.xib */; };
 		49E621141B667B1300E489CB /* SCPopupContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49E621131B667B1300E489CB /* SCPopupContainerViewController.m */; };
+		49E6240E1B67753600E489CB /* KGKeyboardChangeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 49E6240D1B67753600E489CB /* KGKeyboardChangeManager.m */; };
 		D57DF8E31B6182C500DC085B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D57DF8E21B6182C500DC085B /* main.m */; };
 		D57DF8E61B6182C500DC085B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D57DF8E51B6182C500DC085B /* AppDelegate.m */; };
 		D57DF8E91B6182C500DC085B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D57DF8E81B6182C500DC085B /* ViewController.m */; };
@@ -36,6 +37,8 @@
 		49E6210F1B666E9300E489CB /* ContentPopupViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContentPopupViewController.xib; sourceTree = "<group>"; };
 		49E621121B667B1300E489CB /* SCPopupContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCPopupContainerViewController.h; path = SCPopupViewController/SCPopupContainerViewController.h; sourceTree = "<group>"; };
 		49E621131B667B1300E489CB /* SCPopupContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCPopupContainerViewController.m; path = SCPopupViewController/SCPopupContainerViewController.m; sourceTree = "<group>"; };
+		49E6240C1B67753600E489CB /* KGKeyboardChangeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGKeyboardChangeManager.h; sourceTree = "<group>"; };
+		49E6240D1B67753600E489CB /* KGKeyboardChangeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGKeyboardChangeManager.m; sourceTree = "<group>"; };
 		D57DF8DD1B6182C500DC085B /* popupProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = popupProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D57DF8E11B6182C500DC085B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D57DF8E21B6182C500DC085B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -74,6 +77,8 @@
 		D57DF8D41B6182C500DC085B = {
 			isa = PBXGroup;
 			children = (
+				49E6240C1B67753600E489CB /* KGKeyboardChangeManager.h */,
+				49E6240D1B67753600E489CB /* KGKeyboardChangeManager.m */,
 				D57DF9061B61866E00DC085B /* SCPopupViewController */,
 				D57DF8DF1B6182C500DC085B /* popupProject */,
 				D57DF8F91B6182C500DC085B /* popupProjectTests */,
@@ -250,6 +255,7 @@
 				49E621101B666E9300E489CB /* ContentPopupViewController.m in Sources */,
 				D57DF8E91B6182C500DC085B /* ViewController.m in Sources */,
 				D57DF8E61B6182C500DC085B /* AppDelegate.m in Sources */,
+				49E6240E1B67753600E489CB /* KGKeyboardChangeManager.m in Sources */,
 				D57DF8E31B6182C500DC085B /* main.m in Sources */,
 				D57DF90C1B61876600DC085B /* SCPopupViewController.m in Sources */,
 			);

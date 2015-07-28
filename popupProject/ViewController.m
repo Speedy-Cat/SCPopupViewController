@@ -26,7 +26,9 @@
     // Dispose of any resources that can be recreated.
 }
 - (IBAction)openPopupAction:(id)sender {
+    
     ContentPopupViewController *contentVC = [ContentPopupViewController new];
+    
     SCPopupViewController *popup = [[SCPopupViewController alloc] initWithContentView:contentVC onTargetViewController:self];
     [popup show];
 }

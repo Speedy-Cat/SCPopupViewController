@@ -7,6 +7,7 @@
 //
 
 #import "SCPopupViewController.h"
+#import "KGKeyboardChangeManager.h"
 
 #define _RGBA(r,g,b,a) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:a]
 
@@ -26,6 +27,7 @@
 {
     self = [self init];
     if (self) {
+        
         if (content) {
             [self addChildViewController:content];
             content.delegate = self;
@@ -50,11 +52,17 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+
+    
+    //
     // add subviews
+    //
     [self.view addSubview:self.backgroundView];
     [self.view addSubview:self.containerView];
     
+    //
     // Create and initialize a tap gesture
+    //
     UITapGestureRecognizer *tapRecognizer = [[UITapGestureRecognizer alloc]
                                                 initWithTarget:self
                                                         action:@selector(showGestureForTapRecognizer:)];
@@ -64,6 +72,34 @@
     
     // Add the tap gesture recognizer to the view
     [self.backgroundView addGestureRecognizer:tapRecognizer];
+    
+    //
+    // keyboard observers
+    //
+    [[KGKeyboardChangeManager sharedManager] addObserverForKeyboardChangedWithBlock:^(BOOL show, CGRect keyboardRect, NSTimeInterval animationDuration, UIViewAnimationCurve animationCurve) {
+        
+        CGRect resultRect;
+        if (show){
+            //
+            CGRect screenRect = [[UIScreen mainScreen] bounds];
+            
+            //
+            CGRect containerRect = self.containerView.frame;
+            
+            // center y
+            int screenTop = (CGRectGetHeight(screenRect) - CGRectGetHeight(keyboardRect))/2;
+            int containerCenterY = CGRectGetHeight(containerRect)/2;
+            int y = screenTop - containerCenterY;
+            resultRect = CGRectMake(CGRectGetMinX(containerRect), y, CGRectGetWidth(containerRect), CGRectGetHeight(containerRect));
+            
+        }
+        else{
+            resultRect = [self getRectForEndAnimationForContainterView:self.containerView];
+        }
+        
+        
+        self.containerView.frame = resultRect;
+     }];
 }
 
 -(void)viewDidAppear:(BOOL)animated
@@ -75,10 +111,8 @@
         self.backgroundView.alpha = 1;
     } completion:^(BOOL finished) {
         [UIView animateWithDuration:0.3 animations:^{
-            CGRect screenRect = [[UIScreen mainScreen] bounds];
-            int y = (CGRectGetHeight(screenRect)/2) - CGRectGetHeight(self.containerView.frame)/2;
-            CGRect rect = CGRectMake( CGRectGetMinX(self.containerView.frame), y, CGRectGetWidth(self.containerView.frame), CGRectGetHeight(self.containerView.frame));
-            self.containerView.frame = rect;
+            
+            self.containerView.frame = [self getRectForEndAnimationForContainterView:self.containerView];
             
         } completion:nil];
     }];
@@ -94,7 +128,10 @@
     [self hide];
 }
 
--(CGRect)getRectForContainer:(UIView*)container
+/**
+ Get rect of the view out side of the screen to start the animation
+ */
+-(CGRect)getRectForStartAnimationForContainterView:(UIView*)container
 {
     CGRect screenRect = [[UIScreen mainScreen] bounds];
     CGRect viewRect = [container bounds];
@@ -107,6 +144,17 @@
     return CGRectMake(x, y, width, height);
 }
 
+/**
+ Get rect of the view out side of the screen to start the animation
+ */
+-(CGRect)getRectForEndAnimationForContainterView:(UIView*)container
+{
+
+    CGRect screenRect = [[UIScreen mainScreen] bounds];
+    int y = (CGRectGetHeight(screenRect)/2) - CGRectGetHeight(container.frame)/2;
+    return CGRectMake( CGRectGetMinX(container.frame), y, CGRectGetWidth(container.frame), CGRectGetHeight(container.frame));
+}
+
 -(UIView *)containerView
 {
     if (!_containerView) {
@@ -117,7 +165,7 @@
         //center the view
         CGRect rect = CGRectMake(0, 0, 300, 300);
         _containerView = [[UIView alloc] initWithFrame:rect];
-        rect = [self getRectForContainer:_containerView];
+        rect = [self getRectForStartAnimationForContainterView:_containerView];
         _containerView.frame = rect;
          _containerView.backgroundColor = [UIColor whiteColor];
     }
@@ -129,7 +177,7 @@
 -(void)setContainerView:(UIView *)containerView
 {
     //center the view
-    CGRect rect = [self getRectForContainer:containerView];
+    CGRect rect = [self getRectForStartAnimationForContainterView:containerView];
     containerView.frame = rect;
     
     _containerView = containerView;
