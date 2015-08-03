@@ -1,0 +1,19 @@
+PODS:
+  - KGKeyboardChangeManager (0.0.1)
+
+DEPENDENCIES:
+  - KGKeyboardChangeManager (from `https://github.com/Speedy-Cat/KGKeyboardChangeManager.git`)
+
+EXTERNAL SOURCES:
+  KGKeyboardChangeManager:
+    :git: https://github.com/Speedy-Cat/KGKeyboardChangeManager.git
+
+CHECKOUT OPTIONS:
+  KGKeyboardChangeManager:
+    :commit: 9a9134c30c94618de5f54b94882d78e6163a3881
+    :git: https://github.com/Speedy-Cat/KGKeyboardChangeManager.git
+
+SPEC CHECKSUMS:
+  KGKeyboardChangeManager: 3899ae25306ab76a73f347eadf3b0503ba229d37
+
+COCOAPODS: 0.37.0

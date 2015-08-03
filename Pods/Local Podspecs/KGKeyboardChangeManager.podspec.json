@@ -1,0 +1,19 @@
+{
+  "name": "KGKeyboardChangeManager",
+  "version": "0.0.1",
+  "summary": "A block-based wrapper around the hairy world of iOS keyboard notifications and frames",
+  "description": "                   A longer description of KGKeyboardChangeManager in Markdown format.\n\n                   * Think: Why did you write this? What is the focus? What does it do?\n                   * CocoaPods will be using this to generate tags, and improve search results.\n                   * Try to keep it short, snappy and to the point.\n                   * Finally, don't worry about the indent, CocoaPods strips it!\n",
+  "homepage": "https://github.com/Speedy-Cat/KGKeyboardChangeManager",
+  "license": "MIT (example)",
+  "authors": {
+    "SpeedyCat": ""
+  },
+  "source": {
+    "git": "https://github.com/Speedy-Cat/KGKeyboardChangeManager.git",
+    "tag": "v0.0.1"
+  },
+  "source_files": [
+    "Classes",
+    "KGKeyboardChangeManager.{h,m}"
+  ]
+}
