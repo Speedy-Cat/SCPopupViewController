@@ -210,6 +210,7 @@
 -(void)closeActioned:(id)sender
 {
     [self hide];
+    [self.view endEditing:YES];
 }
 
 
