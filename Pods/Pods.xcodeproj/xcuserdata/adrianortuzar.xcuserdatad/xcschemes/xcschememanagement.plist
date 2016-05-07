@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Pods-popupProject-KGKeyboardChangeManager.xcscheme</key>
+		<key>KGKeyboardChangeManager.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -17,12 +17,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>0F68485636CBC08370E54CBC</key>
+		<key>410DFEE810E6AA1E98C3E199B96F47C9</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8CA4827B9E3BD099CAE6775B</key>
+		<key>53584146DE5F3FABDD80E47D2A6EE000</key>
 		<dict>
 			<key>primary</key>
 			<true/>

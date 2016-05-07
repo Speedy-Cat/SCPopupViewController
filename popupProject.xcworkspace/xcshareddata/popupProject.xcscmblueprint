@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "E4D6AA7092DB4930D9593E401BC7B81438F6A98E",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "DF461CAADB13706454B17F2BB50F488BBAD743E5" : 0,
+    "E4D6AA7092DB4930D9593E401BC7B81438F6A98E" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "BD8787A4-1920-424B-99E9-CC6F57AB9364",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "DF461CAADB13706454B17F2BB50F488BBAD743E5" : "KGKeyboardChangeManager\/",
+    "E4D6AA7092DB4930D9593E401BC7B81438F6A98E" : "SCPopupViewController"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "popupProject",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "popupProject.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Speedy-Cat\/KGKeyboardChangeManager.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "DF461CAADB13706454B17F2BB50F488BBAD743E5"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Speedy-Cat\/SCPopupViewController.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "E4D6AA7092DB4930D9593E401BC7B81438F6A98E"
+    }
+  ]
+}
