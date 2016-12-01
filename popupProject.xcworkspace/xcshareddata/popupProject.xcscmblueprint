@@ -10,7 +10,7 @@
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "BD8787A4-1920-424B-99E9-CC6F57AB9364",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
     "DF461CAADB13706454B17F2BB50F488BBAD743E5" : "KGKeyboardChangeManager\/",
-    "E4D6AA7092DB4930D9593E401BC7B81438F6A98E" : "SCPopupViewController"
+    "E4D6AA7092DB4930D9593E401BC7B81438F6A98E" : "SCPopupViewController\/"
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "popupProject",
   "DVTSourceControlWorkspaceBlueprintVersion" : 204,

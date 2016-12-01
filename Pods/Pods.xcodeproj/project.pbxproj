@@ -7,190 +7,225 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		363AC1249131885F78462F06661C2D94 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
-		3665B9695CC385179B6C87412C16DFC7 /* KGKeyboardChangeManager-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7907B41B2465B834A05793FCD5D38FB3 /* KGKeyboardChangeManager-dummy.m */; };
-		7B0D885BC648B8BAD82D9F9D4DF5DEF4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
-		7BAC963AE456C5C6541A90259E23ACBE /* KGKeyboardChangeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CCE1E56FC8A576F7FCDD0BFE7A22BE72 /* KGKeyboardChangeManager.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		CBEFF3690CFED7A5B99DF4EACC7CAB84 /* Pods-popupProject-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 90E14DE2FE3EF0CB0DCB891E7AA4C376 /* Pods-popupProject-dummy.m */; };
-		CF69EDB9453DE0F8F2E473DB595CBA58 /* KGKeyboardChangeManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F0AA0A13FFFB47862640851E7CBCB3F /* KGKeyboardChangeManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		19FE81F5BA7E053BE64893630DF8F0DC /* Pods-popupProject-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DCC36008CE22E8135ABF324DAA3CD2D8 /* Pods-popupProject-dummy.m */; };
+		289DB9E7B14131AC48E49A7C45402553 /* KGKeyboardChangeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DD4224367568D92E3D99098414F68F85 /* KGKeyboardChangeManager.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		7BFD59F8A3C17CD278B6F316310D2E2C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		9C0FF5E2EA3E5815A58D3D3AF00628C9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		9DFA5A68634B8846CC022641E2E327F2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		B8D9960A41E2C10A549645E0C3CECA22 /* KGKeyboardChangeManager-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 35B9DFF22B4D1AA928DA69638125036D /* KGKeyboardChangeManager-dummy.m */; };
+		BEDB20F52217EEADF29E7A0085358D2B /* KGKeyboardChangeManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 05F07484E95BCA2B492328AC239C1DE5 /* KGKeyboardChangeManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C904547D282C555B0358EC971E3B38D9 /* Pods-popupProjectTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A976E0133A7814604A713254A36F6BE9 /* Pods-popupProjectTests-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		306187907D81EA7FBFF929BB81AB845A /* PBXContainerItemProxy */ = {
+		8AC697E1127D3105F9C03B846284B5EE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 53584146DE5F3FABDD80E47D2A6EE000;
+			remoteGlobalIDString = 83963F48BB8527E955691BCD4585C5DF;
 			remoteInfo = KGKeyboardChangeManager;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		371EF2C5830A1357DA12E8D3722EBCBE /* Pods-popupProject-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-popupProject-frameworks.sh"; sourceTree = "<group>"; };
-		3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		4C09D1F6F11C38CB7263F10566977CE0 /* Pods-popupProject-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-popupProject-resources.sh"; sourceTree = "<group>"; };
-		4F0AA0A13FFFB47862640851E7CBCB3F /* KGKeyboardChangeManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KGKeyboardChangeManager.h; sourceTree = "<group>"; };
-		4FE417E09357BB34E016DF5044CA78A5 /* Pods-popupProject-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-popupProject-acknowledgements.markdown"; sourceTree = "<group>"; };
-		59CEFE04A9B44A76F431CB505DFB95FB /* Pods-popupProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-popupProject.release.xcconfig"; sourceTree = "<group>"; };
-		726E746FA81981F9D23D50F16408D655 /* libKGKeyboardChangeManager.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libKGKeyboardChangeManager.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		7907B41B2465B834A05793FCD5D38FB3 /* KGKeyboardChangeManager-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KGKeyboardChangeManager-dummy.m"; sourceTree = "<group>"; };
-		87B897921B034CB39B540134501F4687 /* KGKeyboardChangeManager-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KGKeyboardChangeManager-prefix.pch"; sourceTree = "<group>"; };
-		8884B0CCCF57AAE50DCD36BF4D1270B9 /* KGKeyboardChangeManager.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KGKeyboardChangeManager.xcconfig; sourceTree = "<group>"; };
-		88A4005A043192F52394D0C72C12C5E6 /* Pods-popupProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-popupProject.debug.xcconfig"; sourceTree = "<group>"; };
-		90E14DE2FE3EF0CB0DCB891E7AA4C376 /* Pods-popupProject-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-popupProject-dummy.m"; sourceTree = "<group>"; };
-		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		C14E81578FCBE6E0DE9FCCA27AD1DFB4 /* libPods-popupProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-popupProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C54A2E52F16FB49EF575D49576C84BDD /* Pods-popupProject-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-popupProject-acknowledgements.plist"; sourceTree = "<group>"; };
-		CCE1E56FC8A576F7FCDD0BFE7A22BE72 /* KGKeyboardChangeManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = KGKeyboardChangeManager.m; sourceTree = "<group>"; };
+		0069CA1DDE38D6440E37A1C2F04BCA3A /* Pods-popupProjectTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-popupProjectTests-frameworks.sh"; sourceTree = "<group>"; };
+		05F07484E95BCA2B492328AC239C1DE5 /* KGKeyboardChangeManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KGKeyboardChangeManager.h; sourceTree = "<group>"; };
+		06D2E9EF9B88CA2E90355FAEE6C97A0C /* Pods-popupProject-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-popupProject-acknowledgements.markdown"; sourceTree = "<group>"; };
+		26632F6D7FD82492D220A9F864790B62 /* Pods-popupProject-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-popupProject-frameworks.sh"; sourceTree = "<group>"; };
+		35B9DFF22B4D1AA928DA69638125036D /* KGKeyboardChangeManager-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KGKeyboardChangeManager-dummy.m"; sourceTree = "<group>"; };
+		376B35E8C72571B8EF447A8896682495 /* libKGKeyboardChangeManager.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libKGKeyboardChangeManager.a; path = libKGKeyboardChangeManager.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C9D421A8EF82023852E593AE285C010 /* Pods-popupProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-popupProject.release.xcconfig"; sourceTree = "<group>"; };
+		8211E38F83C5B44C7BD17FC39A5DA89E /* Pods-popupProjectTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-popupProjectTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		85E0ACC22BAE3EEBE6947F184AECA928 /* KGKeyboardChangeManager-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KGKeyboardChangeManager-prefix.pch"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		94CFC1AB6318A299ABD1D6937B3C0BBC /* Pods-popupProjectTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-popupProjectTests-resources.sh"; sourceTree = "<group>"; };
+		A1758E57C0A4C90527FE166EDA403C71 /* Pods-popupProjectTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-popupProjectTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		A976E0133A7814604A713254A36F6BE9 /* Pods-popupProjectTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-popupProjectTests-dummy.m"; sourceTree = "<group>"; };
+		A9C312470199D71450E317EE6F2A0D5A /* KGKeyboardChangeManager.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KGKeyboardChangeManager.xcconfig; sourceTree = "<group>"; };
+		BBDBAB9719D6CCBFDE0E405CBB9D7C79 /* Pods-popupProject-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-popupProject-acknowledgements.plist"; sourceTree = "<group>"; };
+		BEE86C836EAF3C500FBDC9A5EB0D91A0 /* Pods-popupProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-popupProjectTests.release.xcconfig"; sourceTree = "<group>"; };
+		C93BC763BEFC8799E1EB19ECBDEC752B /* libPods-popupProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-popupProject.a"; path = "libPods-popupProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA3DDFB74979C5FD09DAE10C381A81BD /* Pods-popupProjectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-popupProjectTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		CFD8E94A41E85DDE25581EB94B550A00 /* Pods-popupProject-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-popupProject-resources.sh"; sourceTree = "<group>"; };
+		DCC36008CE22E8135ABF324DAA3CD2D8 /* Pods-popupProject-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-popupProject-dummy.m"; sourceTree = "<group>"; };
+		DD4224367568D92E3D99098414F68F85 /* KGKeyboardChangeManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = KGKeyboardChangeManager.m; sourceTree = "<group>"; };
+		E22774D5AC83A41CAA2912BB89320847 /* Pods-popupProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-popupProject.debug.xcconfig"; sourceTree = "<group>"; };
+		EDA84BDE48C897E37377B0A8281A41E1 /* libPods-popupProjectTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-popupProjectTests.a"; path = "libPods-popupProjectTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		3A678379334C705A727F5C95537A60FF /* Frameworks */ = {
+		13716553C7D54459B4BFA6DF7582D3CD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				363AC1249131885F78462F06661C2D94 /* Foundation.framework in Frameworks */,
+				7BFD59F8A3C17CD278B6F316310D2E2C /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		910293CC663532E80D5D998DF3EE253B /* Frameworks */ = {
+		1B8DF1F6CFE075CCDA0A174147489304 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B0D885BC648B8BAD82D9F9D4DF5DEF4 /* Foundation.framework in Frameworks */,
+				9DFA5A68634B8846CC022641E2E327F2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDB7B5F2DB18137D596F6F60548DEAB0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C0FF5E2EA3E5815A58D3D3AF00628C9 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		586EDC31936B95EE638224A06656941E /* Pods-popupProject */ = {
+		045035D4FBD3604C9C978675EDEA619F /* Pods-popupProjectTests */ = {
 			isa = PBXGroup;
 			children = (
-				4FE417E09357BB34E016DF5044CA78A5 /* Pods-popupProject-acknowledgements.markdown */,
-				C54A2E52F16FB49EF575D49576C84BDD /* Pods-popupProject-acknowledgements.plist */,
-				90E14DE2FE3EF0CB0DCB891E7AA4C376 /* Pods-popupProject-dummy.m */,
-				371EF2C5830A1357DA12E8D3722EBCBE /* Pods-popupProject-frameworks.sh */,
-				4C09D1F6F11C38CB7263F10566977CE0 /* Pods-popupProject-resources.sh */,
-				88A4005A043192F52394D0C72C12C5E6 /* Pods-popupProject.debug.xcconfig */,
-				59CEFE04A9B44A76F431CB505DFB95FB /* Pods-popupProject.release.xcconfig */,
+				A1758E57C0A4C90527FE166EDA403C71 /* Pods-popupProjectTests-acknowledgements.markdown */,
+				8211E38F83C5B44C7BD17FC39A5DA89E /* Pods-popupProjectTests-acknowledgements.plist */,
+				A976E0133A7814604A713254A36F6BE9 /* Pods-popupProjectTests-dummy.m */,
+				0069CA1DDE38D6440E37A1C2F04BCA3A /* Pods-popupProjectTests-frameworks.sh */,
+				94CFC1AB6318A299ABD1D6937B3C0BBC /* Pods-popupProjectTests-resources.sh */,
+				CA3DDFB74979C5FD09DAE10C381A81BD /* Pods-popupProjectTests.debug.xcconfig */,
+				BEE86C836EAF3C500FBDC9A5EB0D91A0 /* Pods-popupProjectTests.release.xcconfig */,
 			);
-			name = "Pods-popupProject";
-			path = "Target Support Files/Pods-popupProject";
+			name = "Pods-popupProjectTests";
+			path = "Target Support Files/Pods-popupProjectTests";
+			sourceTree = "<group>";
+		};
+		5353E48BE72170232CFEA9399892E8BA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				376B35E8C72571B8EF447A8896682495 /* libKGKeyboardChangeManager.a */,
+				C93BC763BEFC8799E1EB19ECBDEC752B /* libPods-popupProject.a */,
+				EDA84BDE48C897E37377B0A8281A41E1 /* libPods-popupProjectTests.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */,
+			);
+			name = iOS;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
-				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
-				94C6B16E18324545C95B6408AD3887B3 /* Development Pods */,
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				E052937309EA89CDDF7620994F22262B /* Products */,
-				F0156488E7D5CA4A56ECDB7B67CE9D1E /* Targets Support Files */,
+				8F53CEC5BE452ECF4FD80469D37E168B /* Pods */,
+				5353E48BE72170232CFEA9399892E8BA /* Products */,
+				88DA9610049BD10CF6BC8A117C16E001 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		872B3DCBEDAF866F354A0FB30CBDAD72 /* KGKeyboardChangeManager */ = {
+		88DA9610049BD10CF6BC8A117C16E001 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				4F0AA0A13FFFB47862640851E7CBCB3F /* KGKeyboardChangeManager.h */,
-				CCE1E56FC8A576F7FCDD0BFE7A22BE72 /* KGKeyboardChangeManager.m */,
-				98F98974FEAC9DA094BF39B6DD5126D3 /* Support Files */,
+				9BF4FC016E66095999FACE5B69CFD2D9 /* Pods-popupProject */,
+				045035D4FBD3604C9C978675EDEA619F /* Pods-popupProjectTests */,
 			);
-			name = KGKeyboardChangeManager;
-			path = /Users/adrianortuzar/Sites/KGKeyboardChangeManager;
-			sourceTree = "<absolute>";
-		};
-		94C6B16E18324545C95B6408AD3887B3 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				872B3DCBEDAF866F354A0FB30CBDAD72 /* KGKeyboardChangeManager */,
-			);
-			name = "Development Pods";
+			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		98F98974FEAC9DA094BF39B6DD5126D3 /* Support Files */ = {
+		8F53CEC5BE452ECF4FD80469D37E168B /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				8884B0CCCF57AAE50DCD36BF4D1270B9 /* KGKeyboardChangeManager.xcconfig */,
-				7907B41B2465B834A05793FCD5D38FB3 /* KGKeyboardChangeManager-dummy.m */,
-				87B897921B034CB39B540134501F4687 /* KGKeyboardChangeManager-prefix.pch */,
+				E6E27DD580054F67DC6469F0FBC1C6C8 /* KGKeyboardChangeManager */,
 			);
-			name = "Support Files";
-			path = "../SCPopupViewController/Pods/Target Support Files/KGKeyboardChangeManager";
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9BF4FC016E66095999FACE5B69CFD2D9 /* Pods-popupProject */ = {
+			isa = PBXGroup;
+			children = (
+				06D2E9EF9B88CA2E90355FAEE6C97A0C /* Pods-popupProject-acknowledgements.markdown */,
+				BBDBAB9719D6CCBFDE0E405CBB9D7C79 /* Pods-popupProject-acknowledgements.plist */,
+				DCC36008CE22E8135ABF324DAA3CD2D8 /* Pods-popupProject-dummy.m */,
+				26632F6D7FD82492D220A9F864790B62 /* Pods-popupProject-frameworks.sh */,
+				CFD8E94A41E85DDE25581EB94B550A00 /* Pods-popupProject-resources.sh */,
+				E22774D5AC83A41CAA2912BB89320847 /* Pods-popupProject.debug.xcconfig */,
+				6C9D421A8EF82023852E593AE285C010 /* Pods-popupProject.release.xcconfig */,
+			);
+			name = "Pods-popupProject";
+			path = "Target Support Files/Pods-popupProject";
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */,
+				7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */ = {
+		E280C0A0F683FEE5A0B88391FBE22056 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */,
+				A9C312470199D71450E317EE6F2A0D5A /* KGKeyboardChangeManager.xcconfig */,
+				35B9DFF22B4D1AA928DA69638125036D /* KGKeyboardChangeManager-dummy.m */,
+				85E0ACC22BAE3EEBE6947F184AECA928 /* KGKeyboardChangeManager-prefix.pch */,
 			);
-			name = iOS;
+			name = "Support Files";
+			path = "../Target Support Files/KGKeyboardChangeManager";
 			sourceTree = "<group>";
 		};
-		E052937309EA89CDDF7620994F22262B /* Products */ = {
+		E6E27DD580054F67DC6469F0FBC1C6C8 /* KGKeyboardChangeManager */ = {
 			isa = PBXGroup;
 			children = (
-				726E746FA81981F9D23D50F16408D655 /* libKGKeyboardChangeManager.a */,
-				C14E81578FCBE6E0DE9FCCA27AD1DFB4 /* libPods-popupProject.a */,
+				05F07484E95BCA2B492328AC239C1DE5 /* KGKeyboardChangeManager.h */,
+				DD4224367568D92E3D99098414F68F85 /* KGKeyboardChangeManager.m */,
+				E280C0A0F683FEE5A0B88391FBE22056 /* Support Files */,
 			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		F0156488E7D5CA4A56ECDB7B67CE9D1E /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				586EDC31936B95EE638224A06656941E /* Pods-popupProject */,
-			);
-			name = "Targets Support Files";
+			name = KGKeyboardChangeManager;
+			path = KGKeyboardChangeManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		ABA6397211675A430CA94DB527024F46 /* Headers */ = {
+		6D9283975B1FB5B6C13AD9FA6E43A200 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CF69EDB9453DE0F8F2E473DB595CBA58 /* KGKeyboardChangeManager.h in Headers */,
+				BEDB20F52217EEADF29E7A0085358D2B /* KGKeyboardChangeManager.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		410DFEE810E6AA1E98C3E199B96F47C9 /* Pods-popupProject */ = {
+		76191416F67193DE530BEF55B82C1195 /* Pods-popupProject */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 604A70048C7F05766C9EAD792B1FAD60 /* Build configuration list for PBXNativeTarget "Pods-popupProject" */;
+			buildConfigurationList = A4C34B40AC1E3CF2636E7AF93CD5F933 /* Build configuration list for PBXNativeTarget "Pods-popupProject" */;
 			buildPhases = (
-				C6EEB98048DF887683C544204F7C49EA /* Sources */,
-				910293CC663532E80D5D998DF3EE253B /* Frameworks */,
+				F963AA6C8CC9E4EB8DEA524DC7020F5F /* Sources */,
+				13716553C7D54459B4BFA6DF7582D3CD /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				BD76B62A1E911015FA8BA1D34934810F /* PBXTargetDependency */,
+				3A90D886F9E1B994182BD9F6DA41BB79 /* PBXTargetDependency */,
 			);
 			name = "Pods-popupProject";
 			productName = "Pods-popupProject";
-			productReference = C14E81578FCBE6E0DE9FCCA27AD1DFB4 /* libPods-popupProject.a */;
+			productReference = C93BC763BEFC8799E1EB19ECBDEC752B /* libPods-popupProject.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		53584146DE5F3FABDD80E47D2A6EE000 /* KGKeyboardChangeManager */ = {
+		83963F48BB8527E955691BCD4585C5DF /* KGKeyboardChangeManager */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = ED3D30408DC6676845E38F3BA64F2082 /* Build configuration list for PBXNativeTarget "KGKeyboardChangeManager" */;
+			buildConfigurationList = 8E61C394FA0F0FC70AECC1859C978AC4 /* Build configuration list for PBXNativeTarget "KGKeyboardChangeManager" */;
 			buildPhases = (
-				3B1847628AEDC3BB39A68A92E57AAE84 /* Sources */,
-				3A678379334C705A727F5C95537A60FF /* Frameworks */,
-				ABA6397211675A430CA94DB527024F46 /* Headers */,
+				F1D37AF74D6C161523BA95BF2B768DDA /* Sources */,
+				1B8DF1F6CFE075CCDA0A174147489304 /* Frameworks */,
+				6D9283975B1FB5B6C13AD9FA6E43A200 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -198,7 +233,23 @@
 			);
 			name = KGKeyboardChangeManager;
 			productName = KGKeyboardChangeManager;
-			productReference = 726E746FA81981F9D23D50F16408D655 /* libKGKeyboardChangeManager.a */;
+			productReference = 376B35E8C72571B8EF447A8896682495 /* libKGKeyboardChangeManager.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		B6EE1866BF70679516B9CF0B2D72E4F7 /* Pods-popupProjectTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 41C110BAF73872FECA718D1EDC5C69F8 /* Build configuration list for PBXNativeTarget "Pods-popupProjectTests" */;
+			buildPhases = (
+				9C1655CDFEB86DC3A150AC1067D93FD0 /* Sources */,
+				EDB7B5F2DB18137D596F6F60548DEAB0 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-popupProjectTests";
+			productName = "Pods-popupProjectTests";
+			productReference = EDA84BDE48C897E37377B0A8281A41E1 /* libPods-popupProjectTests.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -207,7 +258,7 @@
 		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0700;
+				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0700;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
@@ -218,122 +269,136 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = E052937309EA89CDDF7620994F22262B /* Products */;
+			productRefGroup = 5353E48BE72170232CFEA9399892E8BA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				53584146DE5F3FABDD80E47D2A6EE000 /* KGKeyboardChangeManager */,
-				410DFEE810E6AA1E98C3E199B96F47C9 /* Pods-popupProject */,
+				83963F48BB8527E955691BCD4585C5DF /* KGKeyboardChangeManager */,
+				76191416F67193DE530BEF55B82C1195 /* Pods-popupProject */,
+				B6EE1866BF70679516B9CF0B2D72E4F7 /* Pods-popupProjectTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		3B1847628AEDC3BB39A68A92E57AAE84 /* Sources */ = {
+		9C1655CDFEB86DC3A150AC1067D93FD0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3665B9695CC385179B6C87412C16DFC7 /* KGKeyboardChangeManager-dummy.m in Sources */,
-				7BAC963AE456C5C6541A90259E23ACBE /* KGKeyboardChangeManager.m in Sources */,
+				C904547D282C555B0358EC971E3B38D9 /* Pods-popupProjectTests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C6EEB98048DF887683C544204F7C49EA /* Sources */ = {
+		F1D37AF74D6C161523BA95BF2B768DDA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CBEFF3690CFED7A5B99DF4EACC7CAB84 /* Pods-popupProject-dummy.m in Sources */,
+				B8D9960A41E2C10A549645E0C3CECA22 /* KGKeyboardChangeManager-dummy.m in Sources */,
+				289DB9E7B14131AC48E49A7C45402553 /* KGKeyboardChangeManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F963AA6C8CC9E4EB8DEA524DC7020F5F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19FE81F5BA7E053BE64893630DF8F0DC /* Pods-popupProject-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		BD76B62A1E911015FA8BA1D34934810F /* PBXTargetDependency */ = {
+		3A90D886F9E1B994182BD9F6DA41BB79 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = KGKeyboardChangeManager;
-			target = 53584146DE5F3FABDD80E47D2A6EE000 /* KGKeyboardChangeManager */;
-			targetProxy = 306187907D81EA7FBFF929BB81AB845A /* PBXContainerItemProxy */;
+			target = 83963F48BB8527E955691BCD4585C5DF /* KGKeyboardChangeManager */;
+			targetProxy = 8AC697E1127D3105F9C03B846284B5EE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0B1457CAF9C3D7852700EEC27F8BE6FA /* Release */ = {
+		163BC5D28D8A86B686C46748C165C1D5 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 59CEFE04A9B44A76F431CB505DFB95FB /* Pods-popupProject.release.xcconfig */;
+			baseConfigurationReference = CA3DDFB74979C5FD09DAE10C381A81BD /* Pods-popupProjectTests.debug.xcconfig */;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		3B37499739D53C539893378620FC56B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E22774D5AC83A41CAA2912BB89320847 /* Pods-popupProject.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		4F3A75E34002D488AC756FD865EFD3EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C9D421A8EF82023852E593AE285C010 /* Pods-popupProject.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				MACH_O_TYPE = staticlib;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
-		0C78643685CAAE251D196369E84AEAEF /* Release */ = {
+		5860205D00AA4FC2E0886DE6DB653B93 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8884B0CCCF57AAE50DCD36BF4D1270B9 /* KGKeyboardChangeManager.xcconfig */;
+			baseConfigurationReference = A9C312470199D71450E317EE6F2A0D5A /* KGKeyboardChangeManager.xcconfig */;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/KGKeyboardChangeManager/KGKeyboardChangeManager-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		10DE1947DAC0ED28F6C0A9F9BD75D546 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		4C3BB49B4FF12BD1DD4AE86901B610D0 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8884B0CCCF57AAE50DCD36BF4D1270B9 /* KGKeyboardChangeManager.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/KGKeyboardChangeManager/KGKeyboardChangeManager-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
@@ -345,10 +410,34 @@
 			};
 			name = Debug;
 		};
-		552D02D5BA751AC2E8790D2811D496CA /* Debug */ = {
+		7AD4AD6132DBFD2848A09C495C25609E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BEE86C836EAF3C500FBDC9A5EB0D91A0 /* Pods-popupProjectTests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		8DED8AD26D381A6ACFF202E5217EC498 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -362,11 +451,54 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9E1E4E48AF2EAB23169E611BF694090A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
 					"DEBUG=1",
 					"$(inherited)",
 				);
@@ -379,27 +511,34 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		CA02B73AEAAA13AB1D41F9527475C7D2 /* Debug */ = {
+		DA7E7F7FC22BB4F75AB7259AA83CD5EA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 88A4005A043192F52394D0C72C12C5E6 /* Pods-popupProject.debug.xcconfig */;
+			baseConfigurationReference = A9C312470199D71450E317EE6F2A0D5A /* KGKeyboardChangeManager.xcconfig */;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				MACH_O_TYPE = staticlib;
-				MTL_ENABLE_DEBUG_INFO = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/KGKeyboardChangeManager/KGKeyboardChangeManager-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 			};
-			name = Debug;
+			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
@@ -407,26 +546,35 @@
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				552D02D5BA751AC2E8790D2811D496CA /* Debug */,
-				10DE1947DAC0ED28F6C0A9F9BD75D546 /* Release */,
+				9E1E4E48AF2EAB23169E611BF694090A /* Debug */,
+				8DED8AD26D381A6ACFF202E5217EC498 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		604A70048C7F05766C9EAD792B1FAD60 /* Build configuration list for PBXNativeTarget "Pods-popupProject" */ = {
+		41C110BAF73872FECA718D1EDC5C69F8 /* Build configuration list for PBXNativeTarget "Pods-popupProjectTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CA02B73AEAAA13AB1D41F9527475C7D2 /* Debug */,
-				0B1457CAF9C3D7852700EEC27F8BE6FA /* Release */,
+				163BC5D28D8A86B686C46748C165C1D5 /* Debug */,
+				7AD4AD6132DBFD2848A09C495C25609E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		ED3D30408DC6676845E38F3BA64F2082 /* Build configuration list for PBXNativeTarget "KGKeyboardChangeManager" */ = {
+		8E61C394FA0F0FC70AECC1859C978AC4 /* Build configuration list for PBXNativeTarget "KGKeyboardChangeManager" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4C3BB49B4FF12BD1DD4AE86901B610D0 /* Debug */,
-				0C78643685CAAE251D196369E84AEAEF /* Release */,
+				5860205D00AA4FC2E0886DE6DB653B93 /* Debug */,
+				DA7E7F7FC22BB4F75AB7259AA83CD5EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A4C34B40AC1E3CF2636E7AF93CD5F933 /* Build configuration list for PBXNativeTarget "Pods-popupProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B37499739D53C539893378620FC56B3 /* Debug */,
+				4F3A75E34002D488AC756FD865EFD3EA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

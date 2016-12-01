@@ -5,7 +5,7 @@
 #:git => 'https://github.com/Speedy-Cat/KGKeyboardChangeManager.git'
 
 target 'popupProject' do
-	pod 'KGKeyboardChangeManager', :path => '~/Sites/KGKeyboardChangeManager'
+    pod 'KGKeyboardChangeManager', :git => 'https://github.com/Speedy-Cat/KGKeyboardChangeManager.git'
 end
 
 target 'popupProjectTests' do

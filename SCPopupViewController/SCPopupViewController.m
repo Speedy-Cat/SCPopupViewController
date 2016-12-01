@@ -13,7 +13,7 @@
 
 @interface SCPopupViewController ()
 
-@property UIViewController *targetViewController;
+@property (nonatomic) CGSize containerViewSize;
 
 @end
 
@@ -21,17 +21,16 @@
 
 @implementation SCPopupViewController
 
-@synthesize containerView = _containerView;
+@synthesize containerViewController = _containerViewController;
 
 - (id)initWithContentView:(SCPopupContainerViewController*)content onTargetViewController:(UIViewController*)targetViewController
 {
-    self = [self init];
+    self = [super init];
     if (self) {
         
         if (content) {
-            [self addChildViewController:content];
-            content.delegate = self;
-            self.containerView = content.view;
+            
+            self.containerViewController = content;
         }
 
         self.targetViewController = targetViewController;
@@ -39,26 +38,24 @@
     return self;
 }
 
-- (id)init
-{
-    self = [super init];
-    if (self) {
-        
-    }
-    return self;
-}
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-
+    // container
+    [self addChildViewController:self.containerViewController];
+    self.containerViewController.delegate = self;
+    
+    self.containerViewSize = self.containerViewController.view.frame.size;
     
     //
     // add subviews
     //
     [self.view addSubview:self.backgroundView];
-    [self.view addSubview:self.containerView];
+    self.containerViewController.view.frame = [self rectOutContainerView:self.containerViewController.view];
+    [self.view addSubview:self.containerViewController.view];
     
     //
     // Create and initialize a tap gesture
@@ -84,21 +81,37 @@
             CGRect screenRect = [[UIScreen mainScreen] bounds];
             
             //
-            CGRect containerRect = self.containerView.frame;
+            CGRect containerRect = self.containerViewController.view.frame;
             
-            // center y
-            int screenTop = (CGRectGetHeight(screenRect) - CGRectGetHeight(keyboardRect))/2;
-            int containerCenterY = CGRectGetHeight(containerRect)/2;
-            int y = screenTop - containerCenterY;
-            resultRect = CGRectMake(CGRectGetMinX(containerRect), y, CGRectGetWidth(containerRect), CGRectGetHeight(containerRect));
+            //
+            resultRect = ^CGRect(){
+                CGRect frame;
+                
+                int screenSpaceHeight = CGRectGetHeight(screenRect) - CGRectGetHeight(keyboardRect);
+                if (screenSpaceHeight < containerRect.size.height) {
+                    frame = CGRectMake(CGRectGetMinX(containerRect), 0, CGRectGetWidth(containerRect), CGRectGetHeight(screenRect) - CGRectGetHeight(keyboardRect));
+                }
+                else{
+                    // center y
+                    int screenTop = (CGRectGetHeight(screenRect) - CGRectGetHeight(keyboardRect))/2;
+                    int containerCenterY = CGRectGetHeight(containerRect)/2;
+                    int y = screenTop - containerCenterY;
+                    
+                    frame = CGRectMake(CGRectGetMinX(containerRect), y, CGRectGetWidth(containerRect), CGRectGetHeight(containerRect));
+                }
+                
+                return frame;
+            }();
             
         }
         else{
-            resultRect = [self getRectForEndAnimationForContainterView:self.containerView];
+            CGRect frame = self.containerViewController.view.frame;
+            self.containerViewController.view.frame = CGRectMake(CGRectGetMaxX(frame), CGRectGetMaxY(frame), self.containerViewSize.width, self.containerViewSize.height);
+            resultRect = [self rectCenterContainerView:self.containerViewController.view];
         }
         
         
-        self.containerView.frame = resultRect;
+        self.containerViewController.view.frame = resultRect;
      }];
 }
 
@@ -106,16 +119,38 @@
 {
     [super viewDidAppear:animated];
     
-    // animations
-    [UIView animateWithDuration:0.2 animations:^{
-        self.backgroundView.alpha = 1;
-    } completion:^(BOOL finished) {
-        [UIView animateWithDuration:0.3 animations:^{
+    if (self.backgroundView.alpha != 1) {
+        // background fade in animation
+        [UIView animateWithDuration:0.2 animations:^{
+            self.backgroundView.alpha = 1;
+        } completion:^(BOOL finished) {
             
-            self.containerView.frame = [self getRectForEndAnimationForContainterView:self.containerView];
+            // view animation
             
-        } completion:nil];
-    }];
+            [UIView animateWithDuration:0.3
+                                  delay:0
+                                options:UIViewAnimationOptionCurveEaseOut
+                             animations:^{
+                                 
+                                 CGRect frame = [self rectCenterContainerView:self.containerViewController.view];
+                                 self.containerViewController.view.frame = CGRectMake(CGRectGetMinX(frame), CGRectGetMinY(frame) + 20, CGRectGetWidth(frame), CGRectGetHeight(frame));
+                                 
+                             } completion:^(BOOL finished) {
+                                 
+                                 [UIView animateWithDuration:0.3
+                                                       delay:0
+                                                     options:0
+                                                  animations:^{
+                                                      
+                                                      self.containerViewController.view.frame = [self rectCenterContainerView:self.containerViewController.view];
+                                                      
+                                                  } completion:^(BOOL finished) {
+                                                      
+                                                  }];
+                             }];
+            
+        }];
+    }
 }
 
 - (void)didReceiveMemoryWarning {
@@ -125,13 +160,15 @@
 
 - (IBAction)showGestureForTapRecognizer:(UITapGestureRecognizer *)recognizer
 {
-    [self hide];
+    if (self.hideWhenTouchBackground) {
+        [self hide];
+    }
 }
 
 /**
  Get rect of the view out side of the screen to start the animation
  */
--(CGRect)getRectForStartAnimationForContainterView:(UIView*)container
+-(CGRect)rectOutContainerView:(UIView*)container
 {
     CGRect screenRect = [[UIScreen mainScreen] bounds];
     CGRect viewRect = [container bounds];
@@ -145,42 +182,29 @@
 }
 
 /**
- Get rect of the view out side of the screen to start the animation
+ Get rect of the view out side of the screen to end the animation
  */
--(CGRect)getRectForEndAnimationForContainterView:(UIView*)container
+-(CGRect)rectCenterContainerView:(UIView*)container
 {
-
     CGRect screenRect = [[UIScreen mainScreen] bounds];
-    int y = (CGRectGetHeight(screenRect)/2) - CGRectGetHeight(container.frame)/2;
-    return CGRectMake( CGRectGetMinX(container.frame), y, CGRectGetWidth(container.frame), CGRectGetHeight(container.frame));
+    CGRect viewRect = [container bounds];
+
+    int width = CGRectGetWidth(viewRect);
+    int height = CGRectGetHeight(viewRect);
+    int x = (CGRectGetWidth(screenRect)/2) - width/2;
+    int y = (CGRectGetHeight(screenRect)/2) - CGRectGetHeight(container.frame)/2;;
+    
+   
+    return CGRectMake(x, y, width, height);
 }
 
--(UIView *)containerView
-{
-    if (!_containerView) {
-        //
-        //default initialization
-        //
-    
-        //center the view
-        CGRect rect = CGRectMake(0, 0, 300, 300);
-        _containerView = [[UIView alloc] initWithFrame:rect];
-        rect = [self getRectForStartAnimationForContainterView:_containerView];
-        _containerView.frame = rect;
-         _containerView.backgroundColor = [UIColor whiteColor];
-    }
-    
-    return _containerView;
-
-}
-
--(void)setContainerView:(UIView *)containerView
+-(void)setContainerView:(SCPopupContainerViewController *)containerViewController
 {
     //center the view
-    CGRect rect = [self getRectForStartAnimationForContainterView:containerView];
-    containerView.frame = rect;
+    CGRect rect = [self rectOutContainerView:containerViewController.view];
+    containerViewController.view.frame = rect;
     
-    _containerView = containerView;
+    _containerViewController = containerViewController;
 }
 
 -(UIView *)backgroundView
@@ -202,7 +226,42 @@
 
 -(void)hide
 {
-    self.view.hidden = YES;
+    // hide keyboard
+    [self.view endEditing:YES];
+    
+    // animation
+    [UIView animateWithDuration:0.4
+                          delay:0.0
+                        options:0
+                     animations:^{
+                         
+                         CGRect frame = [self rectCenterContainerView:self.containerViewController.view];
+                         self.containerViewController.view.frame = CGRectMake(CGRectGetMinX(frame), CGRectGetMinY(frame) + 20, CGRectGetWidth(frame), CGRectGetHeight(frame));
+                        
+                     }
+                     completion:^(BOOL finished) {
+                         [UIView animateWithDuration:0.4
+                                               delay:0.0
+                                             options:UIViewAnimationOptionCurveEaseIn
+                                          animations:^{
+                                              
+                                              
+                                              self.containerViewController.view.frame = [self rectOutContainerView:self.containerViewController.view];
+                                              
+                                          }
+                                          completion:^(BOOL finished) {
+                                              self.view.hidden = YES;
+                                              [self.view endEditing:YES];
+                                              
+                                              [self.containerViewController.view removeFromSuperview];
+                                              [self.containerViewController removeFromParentViewController];
+                                              
+                                              [self.view removeFromSuperview];
+                                              [self removeFromParentViewController];
+                                              
+                                              
+                                          }];
+                     }];
 }
 
 #pragma SCPopupControllerDelegate
@@ -210,7 +269,11 @@
 -(void)closeActioned:(id)sender
 {
     [self hide];
-    [self.view endEditing:YES];
+    
+}
+
+-(void)dealloc{
+    
 }
 
 

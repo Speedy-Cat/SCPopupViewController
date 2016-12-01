@@ -16,6 +16,8 @@
 -(void)hide;
 
 @property (strong, nonatomic) UIView *backgroundView;
-@property (strong, nonatomic) UIView *containerView;
+@property (strong, nonatomic) SCPopupContainerViewController *containerViewController;
+@property (strong, nonatomic) UIViewController *targetViewController;
+@property (nonatomic) BOOL hideWhenTouchBackground;
 
 @end

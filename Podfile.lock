@@ -1,14 +1,21 @@
 PODS:
-  - KGKeyboardChangeManager (0.0.2)
+  - KGKeyboardChangeManager (0.0.3)
 
 DEPENDENCIES:
-  - KGKeyboardChangeManager (from `~/Sites/KGKeyboardChangeManager`)
+  - KGKeyboardChangeManager (from `https://github.com/Speedy-Cat/KGKeyboardChangeManager.git`)
 
 EXTERNAL SOURCES:
   KGKeyboardChangeManager:
-    :path: ~/Sites/KGKeyboardChangeManager
+    :git: https://github.com/Speedy-Cat/KGKeyboardChangeManager.git
+
+CHECKOUT OPTIONS:
+  KGKeyboardChangeManager:
+    :commit: 3f43a44545f7b4d25983f05817d2aa350fb8ff7d
+    :git: https://github.com/Speedy-Cat/KGKeyboardChangeManager.git
 
 SPEC CHECKSUMS:
-  KGKeyboardChangeManager: 9165e77b36d0f7d896a0747e0d2564f7d4d1b8c4
+  KGKeyboardChangeManager: 122f900e34e530e7f4f55a2753f6245d1bdc2c7c
 
-COCOAPODS: 0.39.0.rc.1
+PODFILE CHECKSUM: 5d3267bd60481e6f13a776edec9065b7ba7259c8
+
+COCOAPODS: 1.1.1

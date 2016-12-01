@@ -10,6 +10,7 @@
 
 @protocol SCPopupContainerDelegate <NSObject>
 
+@optional
 -(void)closeActioned:(id)sender;
 
 @end
